@@ -65,7 +65,7 @@ export default function Home() {
         </div>
         <div>
           <p>
-            Этот сайт создали Галиханов Ілияс и Андижан Мухаммед.
+            Этот сайт создали Галиханов Ілияс и Андижан Мухаммед. Something changed
           </p>
         </div>
       </main>
