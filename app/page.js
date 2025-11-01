@@ -14,31 +14,34 @@ export default function Home() {
           priority
         />
         <div className={styles.intro}>
-          <h1>To get started, edit the page.js file.</h1>
+          <h1>Добро пожаловать в мой Next.js проект!</h1>
           <p>
-            Looking for a starting point or more instructions? Head over to{" "}
+            Это пример стартовой страницы. Чтобы внести изменения, открой файл{" "}
+            <code>page.js</code> и обнови содержимое по своему вкусу.
+          </p>
+          <p>
+            Если ты хочешь узнать больше о Next.js, загляни в{" "}
             <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              href="https://nextjs.org/docs"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Templates
+              официальную документацию
             </a>{" "}
-            or the{" "}
+            или изучи примеры на{" "}
             <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+              href="https://vercel.com/templates"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Learning
-            </a>{" "}
-            center.
+              сайте Vercel
+            </a>.
           </p>
         </div>
         <div className={styles.ctas}>
           <a
             className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://vercel.com/new"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -49,15 +52,15 @@ export default function Home() {
               width={16}
               height={16}
             />
-            Deploy Now
+            Развернуть проект
           </a>
           <a
             className={styles.secondary}
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
+            href="https://nextjs.org/learn"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Documentation
+            Изучить Next.js
           </a>
         </div>
       </main>
