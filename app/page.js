@@ -63,6 +63,11 @@ export default function Home() {
             Изучить Next.js
           </a>
         </div>
+        <div>
+          <p>
+            Этот сайт создали Галиханов Ілияс и Андижан Мухаммед.
+          </p>
+        </div>
       </main>
     </div>
   );
