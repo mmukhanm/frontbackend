@@ -1,0 +1,69 @@
+[00:00:07.417] Server  LOG      ✓ Ready in 5.8s
+[00:00:51.665] Server  LOG      ○ Compiling / ...
+[00:01:05.454] Server  WARN     ⚠ Cross origin request detected from 127.0.0.1 to /_next/* resource. In a future major version of Next.js, you will need to explicitly configure "allowedDevOrigins" in next.config to allow this.
+Read more: https://nextjs.org/docs/app/api-reference/config/next-config-js/allowedDevOrigins
+[00:01:50.288] Browser ERROR   A tree hydrated but some attributes of the server rendered HTML didn't match the client properties. This won't be patched up. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+%s%s https://react.dev/link/hydration-mismatch 
+
+  ...
+    <HotReload globalError={[...]} webSocket={WebSocket} staticIndicatorState={{pathname:null, ...}}>
+      <AppDevOverlayErrorBoundary globalError={[...]}>
+        <ReplaySsrOnlyErrors>
+        <DevRootHTTPAccessFallbackBoundary>
+          <HTTPAccessFallbackBoundary notFound={<NotAllowedRootHTTPFallbackError>}>
+            <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<NotAllowedRootHTTPFallbackError>} ...>
+              <RedirectBoundary>
+                <RedirectErrorBoundary router={{...}}>
+                  <Head headCacheNode={{lazyData:null, ...}}>
+                    <__next_viewport_boundary__>
+                    <Next.Metadata>
+                      <div
+                        hidden={true}
+-                       bis_skin_checked="1"
+                      >
+                    ...
+                  <__next_root_layout_boundary__>
+                    <SegmentViewNode type="layout" pagePath="layout.js">
+                      <SegmentTrieNode>
+                      <link>
+                      <RootLayout>
+                        <html lang="en">
+                          <body
+                            className="__variable_188709 __variable_9a8899"
+-                           __processed_e3a58110-d5a7-4022-8565-b39fb6329f79__="true"
+-                           bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6Im5pbWxtZWpibW5lY25hZ2hnbWJhaG1iYWRk..."
+                          >
+                            ...
+                              <SegmentViewNode type="page" pagePath="page.js">
+                                <SegmentTrieNode>
+                                <Home>
+                                  <div
+                                    className="page_page__556_G"
+-                                   bis_skin_checked="1"
+                                  >
+                                    <main className="page_main_...">
+                                      <img>
+                                      <ImagePreload>
+                                      <div
+                                        className="page_intro__YeqBg"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+                                        className="page_ctas__rfsth"
+-                                       bis_skin_checked="1"
+                                      >
+                                      <div
+-                                       bis_skin_checked="1"
+                                      >
+                              ...
+                  ...
+
